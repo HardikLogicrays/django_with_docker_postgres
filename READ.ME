@@ -1,0 +1,22 @@
+- This folder is a django project.
+- Here i can create django project and config with postgresql database using docker-compose.yml file.
+
+
+step 1:
+    - create django project.
+    - create app.
+    - create dummy model. [Here i can create Student model.]
+    - create requirements.txt file. [NOTE: if you can config with postgresql data base you should have install
+      "psycopg2-binary==2.9.5" package.]
+    - change database config sqlite3 to postgresql in setting.py file.
+
+step 2:
+    - create Dockerfile.
+    - then create whole project image using Dockerfile.
+    - then push image in dockerhub.
+
+step 3:
+    - create docker-compose.yml file.
+    - setup image, container_name, port, and command in docker-compose.yml file.
+    - then share this file to other person and run "docker-compose build" and "docker-compose up" command and run
+      your project according to your ports which is define in docker-compose.yml file.
